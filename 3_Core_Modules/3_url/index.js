@@ -1,13 +1,10 @@
 const url = require('url');
-const  address = 'https://www.meusite.co.mz/catalog?'
+const  address = 'https://www.meusite.co.mz/catalog?produtos=laptop';
+const parsedUrl = new url.URL(address);
 
-const port = 3000;
+console.log(parsedUrl.hostname);
+console.log(parsedUrl.pathname);
+console.log(parsedUrl.search);
+console.log(parsedUrl.searchParams);
+console.log(parsedUrl.searchParams.get('produtos'));
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-   
-});
-
-server.listen(port, () =>{
-    console.log(`Servidor rodando na porta ${port}`);
-})
