@@ -1,0 +1,11 @@
+{
+  "name": "1_criando_projecto",
+  "version": "1.0.0",
+  "description": "Fundamentos de npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sansão Maposse",
+  "license": "ISC"
+}
